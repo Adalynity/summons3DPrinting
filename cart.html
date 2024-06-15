@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Summons 3D Printing</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Summons 3D Printing</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="latest-videos.html">Latest Videos</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically generated here -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: $<span id="total-price">0.00</span></h3>
+            </div>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+    <script src="js/cart.js"></script>
+</body>
+</html>

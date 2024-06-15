@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Summons 3D Printing</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Summons 3D Printing</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="latest-videos.html">Latest Videos</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-search">
+            <input type="text" id="search" placeholder="Search products...">
+        </section>
+        <section class="product-list">
+            <div class="product" data-name="3D Printer Model A">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>3D Printer Model A</h3>
+                <p>$499.99</p>
+                <button onclick="addToCart('3D Printer Model A', 499.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Filament Pack">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Filament Pack</h3>
+                <p>$29.99</p>
+                <button onclick="addToCart('Filament Pack', 29.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="3D Printing Tools">
+                <img src="images/product3.jpg" alt="Product 3">
+                <h3>3D Printing Tools</h3>
+                <p>$19.99</p>
+                <button onclick="addToCart('3D Printing Tools', 19.99)">Add to Cart</button>
+            </div>
+            <!-- More placeholder products -->
+        </section>
+    </main>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

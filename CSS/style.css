@@ -1,0 +1,102 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    background-color: darkcyan;
+}
+
+.container{
+    
+    display: block;
+    width: 800px;
+    height: 600px;
+    background-color: lightblue;
+    border: black 1px solid;
+    border-radius: 0;
+    margin: 200px auto;
+    cursor: pointer;
+    z-index: 1;
+}
+.card-front h1{
+    position: relative;
+    top: 250px;
+    
+}
+.card-inside{
+    position: relative;
+    bottom: 80px;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+    z-index: -1;
+    transition: translate 2500ms;
+    background-color: #bbc1cb;
+}
+.card-left{
+    flex: 50%;
+    width: auto;
+    height: auto;
+    border: 1px, solid black;
+}
+
+
+/* heart */
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+    left: 140px;
+    top: 50px;
+}
+    #heart::before, #heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: red;
+ }
+    #heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+    #heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+/* heart */
+
+.card-right{
+    flex: 50%;
+    width: auto;
+    height: auto;
+    border: 1px ,solid black;
+}
+.card-inside.open{
+    visibility: visible;
+    translate: 0 -600px;
+    
+}
+.card-inside.place{
+    translate: 0 0;
+}
+
+.thumbs{
+    position: absolute;
+    left: 480px;
+    top: 200px;
+}
+.arrow{
+    position: absolute;
+    width: 100px;
+    top: 525px;
+    left: 560px;
+    z-index: 1000!important;
+}
